@@ -5,7 +5,7 @@ body
 	font-size: 15px
 	min-width: 320px
 	position: relative
-	line-height: 1.6
+	line-height: 1.5
 	font-family: "OpenSans-Regular", sans-serif
 	overflow-x: hidden
 	background-color: #2d9951
@@ -15,10 +15,13 @@ body
 
 a
 	color: #fb7322
-	text-decoration: underline
-	transition: color .5s ease
+	text-decoration: none
+	border-bottom: 1px dotted #fb7322
+	transition: all .5s ease
 	&:hover
 		color: lighten(#fb7322, 10%)
+		text-decoration: none
+		border-bottom: 1px dotted lighten(#fb7322, 10%)
 
 .ConfirmRules-wrap
 	position: relative
@@ -38,18 +41,16 @@ a
 		font-size: 13px
 		a
 			color: #2aa955
-			text-decoration: none
 			border-bottom: 1px dotted #2aa955
 			&:hover
 				color: lighten(#2aa955, 10%)
-				text-decoration: none
 				border-bottom: 1px dotted lighten(#2aa955, 10%)
 	input[type='checkbox'] + label:before
 		content: ''
 		width: 12px
 		height: 12px
 		position: absolute
-		top: 2px
+		top: 3px
 		left: -22px
 		display: inline-block
 		background: url(../img/checkbox.svg) no-repeat	
@@ -59,7 +60,7 @@ a
 		width: 12px
 		height: 12px
 		position: absolute
-		top: 2px
+		top: 3px
 		left: -22px
 		display: inline-block
 		background: url(../img/checkbox-checked.svg) no-repeat	
@@ -70,6 +71,7 @@ a
 	width: 146px
 	height: auto
 	margin-top: 22px
+	border: none
 
 
 .gag-wrap
@@ -95,12 +97,14 @@ a
 		border-radius: 9px
 		padding: 36px 58px 26px
 		text-align: center
+		box-shadow: 0 0 35px rgba(0,0,0,.12)
 		>img
 			width: 59px
 			height: 57px
 			display: inline-block
-		h2, p, button
-			margin-bottom: 8px
+			margin-bottom: 22px
+		h2, p
+			margin: 0 0 10px 0
 		h2
 			font: 21px "OpenSans-SemiBold", sans-serif	 
 		.inputs-wrap
@@ -141,6 +145,7 @@ a
 			background-color: #2aa955
 			border: none
 			border-radius: 4px
+			margin-bottom: 22px
 
 
 
